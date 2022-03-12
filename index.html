@@ -1,0 +1,89 @@
+<DOCTYPE HTML>
+    <html>
+
+    <head>
+        <style>
+            .header-background {
+                background-image: url("images.jpeg");
+                opacity: 0.8;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .header h1,
+            .header p {
+                width: 100%;
+            }
+        </style>
+        <link rel="stylesheet" href="STYLES.css">
+        <title>Sandra Obodo</title>
+    </head>
+
+    <body>
+        <!----------- Fix the header and the styling. This time I nested the h1 and p into a div and set the background to the div-->
+        <div class="header-background">
+            <div class="header">
+                <h1> Hi, My name is Sandra Obodo.</h1>
+                <p>I am a <em>Web Developer</em> based in Lagos, Nigeria.</p>
+            </div>
+        </div>
+
+        <h2><span class="underline">About Me</span></h2>
+        <br>
+        <br/>
+        <section onmouseover="mmypicture.PNGHover()" onmouseout="mmypicture.PNGNormal()"></section>
+        <img src="mmypicture.PNG" width="50%" height="50%">
+        </section>
+
+        <p>I studied Banking and Finance at the University of Nigeria Nsukka and graduated with a second class upper division (4.20 cgpa) in 2018. In 2019, I registered for the Chartered Institute of Bankers of Nigeria Examinations to become an Associate
+            Member and in 2021, i concluded the exams and achieved my goal of becoming a Chartered Banker. I am a Banker with a difference. I love to read and learn new skills. My journey towards web development started in 2021 when i enrolled for a 5
+            day coding challenge with Code Institute. It brought out the zeal to learn more. I subsequently enrolled for classes on Web Development with Afro Fem Coders. It is a community of women across Africa interested in coding. With the community,
+            I learnt HTML, CSS and JavaScript.
+        </p>
+
+        <h2 class="underline">My Portfolio</h2>
+        <p>Below are my projects. They are stepping stones to many more
+            <br>
+            <br/>
+            <!---------------------- Old code ------------------------------------------------>
+            <!----So as you can the images were supposed to be wrapped in individual column divs-->
+            <!-- <div class="row">
+                <div class="column">
+                    <img src="Web Page.PNG">
+                    <img src="RGB.PNG">
+                    <img src="RGB1.PNG">
+                </div>
+            </div> -->
+            <!---------------------- Correction ------------------------------------------------>
+            <div class="row">
+                <div class="column">
+                    <img src="Web Page.PNG">
+                </div>
+                <div class="column">
+                    <img src="RGB.PNG">
+                </div>
+                <div class="column">
+                    <img src="RGB1.PNG">
+                </div>
+            </div>
+            <a href="https://sandraobodo.github.io" style="color:white">The Great Guessing Game</a>
+        </p>
+
+        <br>
+        <br/>
+        <h3>Contact Information</h3>
+        <section onmouseover="LinkedInnHover()" onmouseout="LinkedInnNormal()"></section>
+        <ul>
+            <li>Mobile Number: +2348108947163 </li>
+            <li>Email Address: sandra.obodo@yahoo.com </li>
+            <li><a href="https://www.linkedin.com/in/sandra-obodo-77652714a" style="color:white">LinkedIn Profile</a> <i id="LinkedInn" class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+        </ul>
+        <br>
+        <br/>
+
+        <script>
+        </script>
+        <script type="text/javascript" src="web.js"></script>
+    </body>
+
+    </html>
